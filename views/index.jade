@@ -1,4 +1,26 @@
 extends layout
 
 block content
-  h1 Welcome to Video Chat. Please request room and join
+  script(src="/javascripts/index.js")
+  div(id="image-body")
+    div(id="home_wrapper")
+      h1(class="title") Welcome to Our Video Chat!
+      p(class="label") please click below buttons as you like
+      div(class="call-btn-wrap")
+
+        div(class="call-type-wrapper", onclick="go_call('video')")
+          div(class="icon-wrapper")
+            i(class="call-type-icon fas fa-video")
+          div(class="call-type-label") VIDEO CALL
+
+        div(class="call-type-wrapper", onclick="go_call('audio')")
+          div(class="icon-wrapper")
+            i(class="call-type-icon fas fa-phone-alt")
+          div(class="call-type-label") AUDIO CALL
+
+        div(class="call-type-wrapper", onclick="go_call('message')", style="margin-right:0")
+          div(class="icon-wrapper")
+            i(class="call-type-icon fas fa-comments")
+          div(class="call-type-label") MESSAGE
+
+  //- div(id="meet")
