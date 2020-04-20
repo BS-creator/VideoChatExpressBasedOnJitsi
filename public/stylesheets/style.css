@@ -1,0 +1,28 @@
+body {
+  margin: 0px;
+}
+
+.leftwatermark {
+  display: none;
+}
+
+#meet {
+  background-image: url(../images/spinner.gif);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 120px 120px;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#roomName {
+  display: none;
+}
+
+.new-toolbox .toolbox-content .button-group-center, .new-toolbox .toolbox-content .button-group-left, .new-toolbox .toolbox-content .button-group-right {
+  display: flex;
+  width: initial;
+}
